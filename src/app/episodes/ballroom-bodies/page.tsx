@@ -65,7 +65,7 @@ export default function Episode() {
             </div>
           </div>
           <div className="flex items-center justify-between text-sm text-gray-500">
-            <span>Duration: 9:42</span>
+            <span>Duration: 10:53</span>
             <span>Released: August 2025</span>
           </div>
         </div>

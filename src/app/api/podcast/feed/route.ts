@@ -14,11 +14,11 @@ const episodes = [
     number: 1,
     title: "The Ballroom Bodies",
     description: "The John List Case: A Sunday school teacher who methodically murdered his entire family, then vanished for 18 years. The house sat lit for a month, hymns playing on repeat, while five bodies decomposed in the ballroom.",
-    duration: "9:42",
-    durationSeconds: 582,
+    duration: "10:53",
+    durationSeconds: 653,
     date: "2025-08-11",
     file: "ep001-ballroom-bodies.mp3",
-    fileSize: 22003504,
+    fileSize: 8070000,
     slug: "ballroom-bodies"
   },
 ]
