@@ -11,14 +11,25 @@ const PODCAST_SUBCATEGORY = ''
 
 const episodes = [
   {
+    number: 2,
+    title: "The Family Next Door",
+    description: "The Chris Watts Case: A fitness-obsessed father who murdered his pregnant wife and two daughters in Frederick, Colorado — then went on TV pleading for their safe return. He forced his children's bodies through eight-inch hatches into crude oil tanks.",
+    duration: "10:05",
+    durationSeconds: 605,
+    date: "2026-02-12",
+    file: "ep002-family-next-door.mp3",
+    fileSize: 8435756,
+    slug: "family-next-door"
+  },
+  {
     number: 1,
     title: "The Ballroom Bodies",
     description: "The John List Case: A Sunday school teacher who methodically murdered his entire family, then vanished for 18 years. The house sat lit for a month, hymns playing on repeat, while five bodies decomposed in the ballroom.",
-    duration: "10:53",
-    durationSeconds: 653,
+    duration: "11:01",
+    durationSeconds: 661,
     date: "2025-08-11",
     file: "ep001-ballroom-bodies.mp3",
-    fileSize: 8070000,
+    fileSize: 9339260,
     slug: "ballroom-bodies"
   },
 ]

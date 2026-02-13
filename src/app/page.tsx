@@ -3,14 +3,24 @@ import { SubscribeForm } from '@/components/SubscribeForm'
 
 const episodes = [
   {
+    number: 2,
+    slug: 'family-next-door',
+    title: 'The Family Next Door',
+    subtitle: 'The Chris Watts Case',
+    excerpt: "A fitness-obsessed father. A pregnant wife documenting her perfect life on social media. Two little girls with gap-toothed smiles. On August 13, 2018, Chris Watts murdered them all — then went on TV pleading for their safe return.",
+    duration: '10:05',
+    date: 'February 2026',
+    featured: true
+  },
+  {
     number: 1,
     slug: 'ballroom-bodies',
     title: 'The Ballroom Bodies',
     subtitle: 'The John List Case',
     excerpt: "A Sunday school teacher. A Boy Scout leader. A father who methodically murdered his entire family, then vanished for 18 years. The house sat lit for a month, hymns playing on repeat, while five bodies decomposed in the ballroom.",
-    duration: '9:42',
+    duration: '11:01',
     date: 'August 2025',
-    featured: true
+    featured: false
   }
 ]
 
@@ -141,8 +151,8 @@ export default function Home() {
               {/* Stats */}
               <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6">
                 <div className="text-center">
-                  <div className="text-4xl font-serif font-bold text-[#c9a227]">1</div>
-                  <div className="text-sm text-gray-500 mt-1">Episode Available</div>
+                  <div className="text-4xl font-serif font-bold text-[#c9a227]">2</div>
+                  <div className="text-sm text-gray-500 mt-1">Episodes Available</div>
                 </div>
               </div>
             </div>
