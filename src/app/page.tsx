@@ -3,6 +3,16 @@ import { SubscribeForm } from '@/components/SubscribeForm'
 
 const episodes = [
   {
+    number: 3,
+    slug: 'love-slave-killers',
+    title: 'The Love Slave Killers',
+    subtitle: 'The Gallego Case',
+    excerpt: "A violin prodigy and a convicted criminal terrorized Sacramento for two years, luring ten victims from shopping malls. Their final abduction at Arden Fair Mall — witnessed by a fraternity brother who memorized the license plate — brought them down.",
+    duration: '15:08',
+    date: 'February 2026',
+    featured: true
+  },
+  {
     number: 2,
     slug: 'family-next-door',
     title: 'The Family Next Door',
@@ -10,7 +20,7 @@ const episodes = [
     excerpt: "A fitness-obsessed father. A pregnant wife documenting her perfect life on social media. Two little girls with gap-toothed smiles. On August 13, 2018, Chris Watts murdered them all — then went on TV pleading for their safe return.",
     duration: '10:05',
     date: 'February 2026',
-    featured: true
+    featured: false
   },
   {
     number: 1,
@@ -151,7 +161,7 @@ export default function Home() {
               {/* Stats */}
               <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6">
                 <div className="text-center">
-                  <div className="text-4xl font-serif font-bold text-[#c9a227]">2</div>
+                  <div className="text-4xl font-serif font-bold text-[#c9a227]">3</div>
                   <div className="text-sm text-gray-500 mt-1">Episodes Available</div>
                 </div>
               </div>
