@@ -1,6 +1,6 @@
 // Podcast RSS Feed for Suburban Shadows
 
-const SITE_URL = 'https://suburbanshadows.com'
+const SITE_URL = 'https://suburban-shadows.vercel.app'
 const PODCAST_TITLE = 'Suburban Shadows'
 const PODCAST_DESCRIPTION = 'Dark mysteries hidden behind manicured lawns and white picket fences. A true crime podcast exploring the secrets buried in suburban America.'
 const PODCAST_AUTHOR = 'Suburban Shadows'
@@ -11,6 +11,28 @@ const PODCAST_SUBCATEGORY = ''
 
 const episodes = [
   {
+    number: 4,
+    title: "The Applegate Jane Doe",
+    description: "Patricia Rose: For 28 years she was nameless — 'Applegate Jane Doe,' found in the foothills near Auburn. A young woman murdered, buried in a shallow grave. In 2024, genetic genealogy finally gave her back her name. But her killer? Still out there.",
+    duration: "13:20",
+    durationSeconds: 800,
+    date: "2026-02-14",
+    file: "ep004-applegate-jane-doe.mp3",
+    fileSize: 11060258,
+    slug: "applegate-jane-doe"
+  },
+  {
+    number: 3,
+    title: "The Love Slave Killers",
+    description: "Gerald and Charlene Gallego: A husband-wife killing team who terrorized Sacramento in the early 1980s. Ten victims. Sex slaves. A killing spree across California and Nevada. And the wife who testified against her husband to save herself.",
+    duration: "15:08",
+    durationSeconds: 908,
+    date: "2026-02-14",
+    file: "ep003-love-slave-killers.mp3",
+    fileSize: 12897023,
+    slug: "love-slave-killers"
+  },
+  {
     number: 2,
     title: "The Family Next Door",
     description: "The Chris Watts Case: A fitness-obsessed father who murdered his pregnant wife and two daughters in Frederick, Colorado — then went on TV pleading for their safe return. He forced his children's bodies through eight-inch hatches into crude oil tanks.",
@@ -18,7 +40,7 @@ const episodes = [
     durationSeconds: 605,
     date: "2026-02-12",
     file: "ep002-family-next-door.mp3",
-    fileSize: 8435756,
+    fileSize: 8498402,
     slug: "family-next-door"
   },
   {
@@ -27,9 +49,9 @@ const episodes = [
     description: "The John List Case: A Sunday school teacher who methodically murdered his entire family, then vanished for 18 years. The house sat lit for a month, hymns playing on repeat, while five bodies decomposed in the ballroom.",
     duration: "11:01",
     durationSeconds: 661,
-    date: "2025-08-11",
+    date: "2026-02-12",
     file: "ep001-ballroom-bodies.mp3",
-    fileSize: 9339260,
+    fileSize: 9407373,
     slug: "ballroom-bodies"
   },
 ]
