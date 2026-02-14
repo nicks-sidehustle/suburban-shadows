@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 interface HeaderProps {
-  currentPage?: 'home' | 'episodes' | 'cases' | 'about' | 'listen'
+  currentPage?: 'home' | 'episodes' | 'about' | 'listen'
 }
 
 export function Header({ currentPage }: HeaderProps) {
@@ -12,7 +12,6 @@ export function Header({ currentPage }: HeaderProps) {
 
   const navItems = [
     { href: '/episodes', label: 'Episodes', key: 'episodes' },
-    { href: '/cases', label: 'Case Files', key: 'cases' },
     { href: '/about', label: 'About', key: 'about' },
     { href: '/listen', label: 'Subscribe', key: 'listen', highlight: true },
   ]
