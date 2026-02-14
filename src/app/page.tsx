@@ -191,8 +191,83 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Coming Soon */}
+      <section className="border-t border-[#1a1a1a] py-16">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <p className="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-3">Coming Soon</p>
+            <h2 className="font-serif text-3xl font-bold text-white">Stories We're Investigating</h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Episode 4 Teaser */}
+            <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden group hover:border-[#333] transition">
+              <div className="absolute top-4 right-4">
+                <span className="bg-[#c9a227] text-black text-xs font-bold px-2 py-1 rounded">NEXT WEEK</span>
+              </div>
+              <p className="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Episode 4</p>
+              <h3 className="font-serif text-xl font-bold text-white mb-3">The Applegate Jane Doe</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                In 1980, an 18-month-old boy was found alone in a Sacramento hotel room. His mother 
+                had vanished. Her remains wouldn't be identified for 44 years — until DNA technology 
+                finally gave her a name. <span className="text-white">Who was Patricia Rose, and who killed her?</span>
+              </p>
+              <p className="text-gray-600 text-xs mt-4">📍 Placer County, California • 1980</p>
+            </div>
+
+            {/* Future Episode Teaser */}
+            <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden group hover:border-[#333] transition">
+              <div className="absolute top-4 right-4">
+                <span className="bg-[#333] text-gray-400 text-xs font-bold px-2 py-1 rounded">RESEARCHING</span>
+              </div>
+              <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">Episode 5</p>
+              <h3 className="font-serif text-xl font-bold text-white mb-3">The Vampire Killer of Sacramento</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Richard Chase terrorized Sacramento's East Area in 1977-78, earning his nickname 
+                from his disturbing rituals. Six victims. One month of horror. 
+                <span className="text-white"> The suburbs were never the same.</span>
+              </p>
+              <p className="text-gray-600 text-xs mt-4">📍 Sacramento, California • 1977-1978</p>
+            </div>
+
+            {/* Future Episode Teaser */}
+            <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden group hover:border-[#333] transition">
+              <div className="absolute top-4 right-4">
+                <span className="bg-[#333] text-gray-400 text-xs font-bold px-2 py-1 rounded">RESEARCHING</span>
+              </div>
+              <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">Episode 6</p>
+              <h3 className="font-serif text-xl font-bold text-white mb-3">The Girl in the Box</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Colleen Stan was hitchhiking to a friend's birthday party when Cameron Hooker 
+                offered her a ride. She wouldn't escape for seven years. 
+                <span className="text-white"> A Red Bluff nightmare.</span>
+              </p>
+              <p className="text-gray-600 text-xs mt-4">📍 Red Bluff, California • 1977-1984</p>
+            </div>
+
+            {/* Subscribe CTA */}
+            <div className="bg-gradient-to-br from-[#1a1a1a] to-[#111111] border border-[#c9a227]/30 rounded-lg p-6 flex flex-col justify-center">
+              <h3 className="font-serif text-xl font-bold text-white mb-3">Don't Miss an Episode</h3>
+              <p className="text-gray-400 text-sm mb-4">
+                Subscribe now and be the first to know when new episodes drop. Get exclusive case 
+                previews and behind-the-scenes research notes.
+              </p>
+              <Link 
+                href="#newsletter" 
+                className="inline-flex items-center justify-center gap-2 bg-[#c9a227] text-black px-4 py-2 rounded font-medium hover:bg-[#d4ad2d] transition text-sm"
+              >
+                <span>Subscribe Free</span>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Newsletter */}
-      <section className="border-t border-[#1a1a1a] bg-[#111111]">
+      <section id="newsletter" className="border-t border-[#1a1a1a] bg-[#111111]">
         <div className="max-w-xl mx-auto px-4 py-16 text-center">
           <h2 className="font-serif text-2xl font-bold text-white mb-3">Get notified when new episodes drop</h2>
           <p className="text-gray-400 mb-8">
