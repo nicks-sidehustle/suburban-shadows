@@ -8,6 +8,16 @@ export const metadata: Metadata = {
 
 const episodes = [
   {
+    number: 4,
+    slug: 'applegate-jane-doe',
+    title: 'The Applegate Jane Doe',
+    subtitle: 'The Patricia Rose Cold Case',
+    excerpt: "In 1980, an 18-month-old boy was found alone in a Sacramento hotel room. His mother had vanished. For 44 years, her remains lay unidentified in a Placer County case file. DNA finally gave her a name — but who killed Patricia Rose?",
+    duration: '13:20',
+    date: 'February 2026',
+    audioSrc: '/podcast/ep004-applegate-jane-doe.mp3',
+  },
+  {
     number: 3,
     slug: 'love-slave-killers',
     title: 'The Love Slave Killers',

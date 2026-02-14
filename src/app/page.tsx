@@ -3,6 +3,16 @@ import { SubscribeForm } from '@/components/SubscribeForm'
 
 const episodes = [
   {
+    number: 4,
+    slug: 'applegate-jane-doe',
+    title: 'The Applegate Jane Doe',
+    subtitle: 'The Patricia Rose Cold Case',
+    excerpt: "In 1980, an 18-month-old boy was found alone in a Sacramento hotel room. His mother had vanished. For 44 years, her remains lay unidentified in a Placer County case file. DNA finally gave her a name — but who killed Patricia Rose?",
+    duration: '13:20',
+    date: 'February 2026',
+    featured: true
+  },
+  {
     number: 3,
     slug: 'love-slave-killers',
     title: 'The Love Slave Killers',
@@ -10,7 +20,7 @@ const episodes = [
     excerpt: "A violin prodigy and a convicted criminal terrorized Sacramento for two years, luring ten victims from shopping malls. Their final abduction at Arden Fair Mall — witnessed by a fraternity brother who memorized the license plate — brought them down.",
     duration: '15:08',
     date: 'February 2026',
-    featured: true
+    featured: false
   },
   {
     number: 2,
@@ -161,7 +171,7 @@ export default function Home() {
               {/* Stats */}
               <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6">
                 <div className="text-center">
-                  <div className="text-4xl font-serif font-bold text-[#c9a227]">3</div>
+                  <div className="text-4xl font-serif font-bold text-[#c9a227]">4</div>
                   <div className="text-sm text-gray-500 mt-1">Episodes Available</div>
                 </div>
               </div>
@@ -200,27 +210,12 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-6">
-            {/* Episode 4 Teaser */}
+            {/* Episode 5 Teaser */}
             <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden group hover:border-[#333] transition">
               <div className="absolute top-4 right-4">
-                <span className="bg-[#c9a227] text-black text-xs font-bold px-2 py-1 rounded">NEXT WEEK</span>
+                <span className="bg-[#c9a227] text-black text-xs font-bold px-2 py-1 rounded">COMING SOON</span>
               </div>
-              <p className="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Episode 4</p>
-              <h3 className="font-serif text-xl font-bold text-white mb-3">The Applegate Jane Doe</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                In 1980, an 18-month-old boy was found alone in a Sacramento hotel room. His mother 
-                had vanished. Her remains wouldn't be identified for 44 years — until DNA technology 
-                finally gave her a name. <span className="text-white">Who was Patricia Rose, and who killed her?</span>
-              </p>
-              <p className="text-gray-600 text-xs mt-4">📍 Placer County, California • 1980</p>
-            </div>
-
-            {/* Future Episode Teaser */}
-            <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden group hover:border-[#333] transition">
-              <div className="absolute top-4 right-4">
-                <span className="bg-[#333] text-gray-400 text-xs font-bold px-2 py-1 rounded">RESEARCHING</span>
-              </div>
-              <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">Episode 5</p>
+              <p className="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Episode 5</p>
               <h3 className="font-serif text-xl font-bold text-white mb-3">The Vampire Killer of Sacramento</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Richard Chase terrorized Sacramento's East Area in 1977-78, earning his nickname 
@@ -243,6 +238,21 @@ export default function Home() {
                 <span className="text-white"> A Red Bluff nightmare.</span>
               </p>
               <p className="text-gray-600 text-xs mt-4">📍 Red Bluff, California • 1977-1984</p>
+            </div>
+
+            {/* Future Episode Teaser */}
+            <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden group hover:border-[#333] transition">
+              <div className="absolute top-4 right-4">
+                <span className="bg-[#333] text-gray-400 text-xs font-bold px-2 py-1 rounded">RESEARCHING</span>
+              </div>
+              <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">Episode 7</p>
+              <h3 className="font-serif text-xl font-bold text-white mb-3">The Cheerleader Murder</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Kirsten Costas was stabbed to death in a quiet suburban driveway after a 
+                Bob-o-Links dinner. Her killer was a classmate desperate to fit in.
+                <span className="text-white"> A Miramonte High tragedy.</span>
+              </p>
+              <p className="text-gray-600 text-xs mt-4">📍 Orinda, California • 1984</p>
             </div>
 
             {/* Subscribe CTA */}
