@@ -134,9 +134,25 @@ export default function Episode() {
         {/* Sources */}
         <div className="border-t border-[#1a1a1a] pt-8 mb-12">
           <h2 className="font-serif text-xl font-bold text-white mb-4">Sources & Further Reading</h2>
+          
+          <h3 className="text-white font-medium mt-4 mb-3">Court Records</h3>
           <ul className="space-y-2 text-gray-400 text-sm">
-            <li>• Court records: State of New Jersey v. John Emil List</li>
-            <li>• "Righteous Carnage: The List Murders" by Timothy B. Benford & James P. Johnson</li>
+            <li>• <a href="https://law.justia.com/cases/new-jersey/appellate-division-published/1990/270-n-j-super-252-0.html" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">State v. List, 270 N.J. Super. 252 (1990)</a> — NJ Appellate Division</li>
+            <li>• Union County Superior Court records — Trial transcripts (1990)</li>
+          </ul>
+          
+          <h3 className="text-white font-medium mt-6 mb-3">Primary Sources</h3>
+          <ul className="space-y-2 text-gray-400 text-sm">
+            <li>• <a href="https://en.wikipedia.org/wiki/John_List_(murderer)" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">Wikipedia: John List</a> — Comprehensive overview with citations</li>
+            <li>• <a href="https://www.history.com/this-day-in-history/november-9/a-sunday-school-teacher-murders-his-family-and-goes-undercover-for-18-years" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">History.com: This Day in History</a></li>
+            <li>• America's Most Wanted broadcast — May 21, 1989 (led to capture)</li>
+            <li>• FBI case files (FOIA released)</li>
+          </ul>
+          
+          <h3 className="text-white font-medium mt-6 mb-3">Books</h3>
+          <ul className="space-y-2 text-gray-400 text-sm">
+            <li>• "Righteous Carnage: The List Murders" by Timothy B. Benford & James P. Johnson (1991)</li>
+            <li>• "Death Sentence" by Joe Sharkey (1990)</li>
             <li>• America's Most Wanted broadcast, May 21, 1989</li>
             <li>• FBI case files (FOIA released)</li>
             <li>• Contemporary coverage: The New York Times, Newark Star-Ledger</li>

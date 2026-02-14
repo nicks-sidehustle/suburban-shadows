@@ -143,12 +143,26 @@ export default function Episode() {
         {/* Sources */}
         <div className="border-t border-[#1a1a1a] pt-8 mb-12">
           <h2 className="font-serif text-xl font-bold text-white mb-4">Sources & Further Reading</h2>
+          
+          <h3 className="text-white font-medium mt-4 mb-3">Official Case Documents</h3>
           <ul className="space-y-2 text-gray-400 text-sm">
-            <li>• Court records: State of Colorado v. Christopher Lee Watts</li>
-            <li>• Netflix documentary: "American Murder: The Family Next Door" (2020)</li>
-            <li>• Colorado Bureau of Investigation case files</li>
-            <li>• Contemporary coverage: The Denver Post, People Magazine</li>
-            <li>• Oxygen documentary: Criminal Confessions S3E1</li>
+            <li>• <a href="https://ewscripps.brightspotcdn.com/50/f6/94eff14d4972ab4e227cce8ea453/watts-interview-02.18.19_Redacted.pdf" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">Colorado Bureau of Investigation Interview (Feb 2019)</a> — PDF</li>
+            <li>• <a href="https://www.cbsnews.com/colorado/news/chris-watts-murder-weld-county-frederick/" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">Weld County DA Case Documents (2,000+ pages)</a> — CBS Colorado</li>
+            <li>• Weld County District Court — Case 2018CR1620</li>
+          </ul>
+          
+          <h3 className="text-white font-medium mt-6 mb-3">News Coverage</h3>
+          <ul className="space-y-2 text-gray-400 text-sm">
+            <li>• <a href="https://www.cbsnews.com/colorado/news/chris-watts-shanann-watts-murder-frederick-greeley-weld-county/" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">CBS Colorado: Watts Prison Interview</a></li>
+            <li>• <a href="https://www.mercurynews.com/2018/12/05/chris-watts-interviews-how-suspicion-grew-in-murder-case/" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">Mercury News: How Suspicion Grew</a></li>
+            <li>• The Denver Post — Extensive trial and investigation coverage (2018)</li>
+          </ul>
+          
+          <h3 className="text-white font-medium mt-6 mb-3">Documentaries</h3>
+          <ul className="space-y-2 text-gray-400 text-sm">
+            <li>• Netflix: "American Murder: The Family Next Door" (2020) — uses actual footage and texts</li>
+            <li>• Oxygen: Criminal Confessions S3E1</li>
+            <li>• Lifetime: "Chris Watts: Confessions of a Killer" (2020)</li>
           </ul>
         </div>
 

@@ -150,13 +150,26 @@ export default function Episode() {
         {/* Sources */}
         <div className="border-t border-[#1a1a1a] pt-8 mb-12">
           <h2 className="font-serif text-xl font-bold text-white mb-4">Sources & Further Reading</h2>
+          
+          <h3 className="text-white font-medium mt-6 mb-3">Court Records</h3>
           <ul className="space-y-2 text-gray-400 text-sm">
-            <li>• Wikipedia: Gerald and Charlene Gallego</li>
-            <li>• Court records: People v. Gallego (California Supreme Court)</li>
-            <li>• Court records: Gallego v. State (Nevada)</li>
-            <li>• "A Perfect Gentleman" by Jaye Slade Fletcher</li>
-            <li>• "All His Father's Sins" by Ray Biondi & Walt Hecox</li>
-            <li>• FBI case files (FOIA released)</li>
+            <li>• <a href="https://law.justia.com/cases/california/supreme-court/3d/52/115.html" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">People v. Gallego, 52 Cal.3d 115 (1990)</a> — California Supreme Court</li>
+            <li>• <a href="https://caselaw.findlaw.com/court/ca-supreme-court/1774312.html" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">People v. Gallego</a> — FindLaw (full opinion)</li>
+            <li>• <a href="https://law.justia.com/cases/nevada/supreme-court/1985/15932-1.html" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">Gallego v. State, 101 Nev. 782 (1985)</a> — Nevada Supreme Court</li>
+            <li>• <a href="https://scocal.stanford.edu/opinion/people-v-gallego-30933" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">Stanford Law: People v. Gallego</a> — Full case analysis</li>
+          </ul>
+          
+          <h3 className="text-white font-medium mt-6 mb-3">News Coverage</h3>
+          <ul className="space-y-2 text-gray-400 text-sm">
+            <li>• <a href="https://www.latimes.com/archives/la-xpm-1985-12-22-me-20241-story.html" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">LA Times: Nevada Upholds Death Sentence (1985)</a></li>
+            <li>• <a href="https://en.wikipedia.org/wiki/Gerald_and_Charlene_Gallego" className="text-[#c9a227] hover:underline" target="_blank" rel="noopener">Wikipedia: Gerald and Charlene Gallego</a></li>
+            <li>• Sacramento Bee archives (1980-1983) — Trial coverage</li>
+          </ul>
+          
+          <h3 className="text-white font-medium mt-6 mb-3">Books</h3>
+          <ul className="space-y-2 text-gray-400 text-sm">
+            <li>• "A Perfect Gentleman" by Jaye Slade Fletcher (1993)</li>
+            <li>• "All His Father's Sins" by Ray Biondi & Walt Hecox (1988)</li>
             <li>• Contemporary coverage: Sacramento Bee, San Francisco Examiner</li>
             <li>• CBS Sacramento investigation (2013)</li>
           </ul>
