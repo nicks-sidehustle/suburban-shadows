@@ -37,7 +37,7 @@ export function Header({ currentPage }: HeaderProps) {
               </Link>
             ))}
             <Link
-              href="/api/podcast/feed"
+              href="/listen"
               className="text-[#c9a227] hover:text-[#d4ad2d] transition font-medium"
             >
               Subscribe →
