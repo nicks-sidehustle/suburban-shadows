@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Header } from '@/components/Header'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -52,27 +53,7 @@ const episodes = [
 export default function Episodes() {
   return (
     <main className="min-h-screen bg-[#0a0a0a]">
-      {/* Header */}
-      <header className="border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="flex items-center justify-between py-4">
-            <Link href="/" className="group">
-              <h1 className="font-serif text-2xl font-bold text-white tracking-tight">
-                Suburban<span className="text-[#c9a227]">Shadows</span>
-              </h1>
-            </Link>
-            <nav className="hidden md:flex gap-8 text-sm">
-              <Link href="/episodes" className="text-white font-medium">Episodes</Link>
-              <Link href="/about" className="text-gray-400 hover:text-white transition">About</Link>
-            </nav>
-            {/* Mobile nav */}
-            <nav className="flex md:hidden gap-4 text-sm">
-              <Link href="/episodes" className="text-white font-medium">Episodes</Link>
-              <Link href="/about" className="text-gray-400">About</Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header currentPage="episodes" />
 
       {/* Episodes List */}
       <section className="max-w-4xl mx-auto px-4 py-8 md:py-12">

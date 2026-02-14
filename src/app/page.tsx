@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Header } from '@/components/Header'
 import { SubscribeForm } from '@/components/SubscribeForm'
 
 const episodes = [
@@ -49,24 +50,7 @@ export default function Home() {
   
   return (
     <main className="min-h-screen bg-[#0a0a0a]">
-      {/* Header */}
-      <header className="border-b border-[#1a1a1a]">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="flex items-center justify-between py-4">
-            <Link href="/" className="group">
-              <h1 className="font-serif text-2xl md:text-3xl font-bold text-white tracking-tight">
-                Suburban<span className="text-[#c9a227]">Shadows</span>
-              </h1>
-            </Link>
-            <nav className="hidden md:flex gap-8 text-sm">
-              <Link href="/episodes" className="text-gray-400 hover:text-white transition">Episodes</Link>
-              <Link href="/cases" className="text-gray-400 hover:text-white transition">Case Files</Link>
-              <Link href="/about" className="text-gray-400 hover:text-white transition">About</Link>
-              <Link href="/listen" className="text-[#c9a227] hover:text-[#d4ad2d] transition font-medium">Listen →</Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header currentPage="home" />
 
       {/* Hero */}
       <section className="relative py-20 md:py-32 overflow-hidden">
