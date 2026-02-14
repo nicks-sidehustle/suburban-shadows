@@ -1,6 +1,6 @@
 // Podcast RSS Feed for Suburban Shadows
 
-const SITE_URL = 'https://suburban-shadows.vercel.app'
+const SITE_URL = 'https://suburbanshadows.com'
 const PODCAST_TITLE = 'Suburban Shadows'
 const PODCAST_DESCRIPTION = 'Dark mysteries hidden behind manicured lawns and white picket fences. A true crime podcast exploring the secrets buried in suburban America.'
 const PODCAST_AUTHOR = 'Suburban Shadows'
