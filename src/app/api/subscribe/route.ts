@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 const BREVO_API_KEY = process.env.BREVO_API_KEY
-const BREVO_LIST_ID = parseInt(process.env.BREVO_LIST_ID || '5') // Suburban Shadows list
+const BREVO_LIST_ID = parseInt(process.env.BREVO_LIST_ID || '14') // Suburban Shadows list
+const WELCOME_TEMPLATE_ID = 2 // Suburban Shadows - Welcome template
 
 export async function POST(request: NextRequest) {
   try {
@@ -23,7 +24,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Add contact to Brevo
-    const response = await fetch('https://api.brevo.com/v3/contacts', {
+    const contactResponse = await fetch('https://api.brevo.com/v3/contacts', {
       method: 'POST',
       headers: {
         'accept': 'application/json',
@@ -41,28 +42,49 @@ export async function POST(request: NextRequest) {
       }),
     })
 
-    if (response.ok || response.status === 204) {
-      return NextResponse.json({
-        success: true,
-        message: 'Welcome to Suburban Shadows! Check your inbox.',
-      })
-    }
-
-    const errorData = await response.json().catch(() => ({}))
+    const contactData = await contactResponse.json().catch(() => ({}))
     
-    // Handle "already exists" as success
-    if (errorData.code === 'duplicate_parameter') {
-      return NextResponse.json({
-        success: true,
-        message: "You're already subscribed!",
-      })
+    // Check if already subscribed
+    const isAlreadySubscribed = contactData.code === 'duplicate_parameter'
+    
+    if (!contactResponse.ok && !isAlreadySubscribed) {
+      console.error('Brevo contact API error:', contactData)
+      return NextResponse.json(
+        { error: 'Failed to subscribe. Please try again.' },
+        { status: 500 }
+      )
     }
 
-    console.error('Brevo API error:', errorData)
-    return NextResponse.json(
-      { error: 'Failed to subscribe. Please try again.' },
-      { status: 500 }
-    )
+    // Send welcome email (only for new subscribers)
+    if (!isAlreadySubscribed) {
+      try {
+        await fetch('https://api.brevo.com/v3/smtp/email', {
+          method: 'POST',
+          headers: {
+            'accept': 'application/json',
+            'content-type': 'application/json',
+            'api-key': BREVO_API_KEY,
+          },
+          body: JSON.stringify({
+            templateId: WELCOME_TEMPLATE_ID,
+            to: [{ email }],
+            params: {
+              EMAIL: email,
+            },
+          }),
+        })
+      } catch (emailError) {
+        // Log but don't fail the subscription if welcome email fails
+        console.error('Welcome email error:', emailError)
+      }
+    }
+
+    return NextResponse.json({
+      success: true,
+      message: isAlreadySubscribed 
+        ? "You're already subscribed!" 
+        : 'Welcome to Suburban Shadows! Check your inbox.',
+    })
 
   } catch (error) {
     console.error('Subscribe error:', error)
