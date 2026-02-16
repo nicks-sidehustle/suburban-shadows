@@ -14,7 +14,7 @@ const episodes = [
     title: 'The Security Expert',
     subtitle: 'The Chris Coleman Case',
     excerpt: "A man who made his living protecting others from danger became the very threat he was paid to eliminate. When anonymous threats began targeting his family, Chris Coleman knew exactly how to investigate them — because he was sending them himself.",
-    duration: '2:45',
+    duration: '18:01',
     date: 'February 2026',
     audioSrc: '/podcast/ep005-the-security-expert.mp3',
   },
