@@ -9,26 +9,6 @@ export const metadata: Metadata = {
 
 const episodes = [
   {
-    number: 7,
-    slug: 'the-spacex-lie',
-    title: 'The SpaceX Lie',
-    subtitle: 'The Chandler Halderson Case',
-    excerpt: "A 23-year-old claimed he was about to work for SpaceX, but when his parents discovered the truth about his web of lies, he chose murder over embarrassment. The subsequent cover-up involving dismemberment shocked a Wisconsin community.",
-    duration: '13:24',
-    date: 'February 2026',
-    audioSrc: '/podcast/ep007-the-spacex-lie.mp3',
-  },
-  {
-    number: 6,
-    slug: 'the-thanksgiving-murders',
-    title: 'The Thanksgiving Murders',
-    subtitle: 'The Joel Guy Jr. Case',
-    excerpt: "When Joel and Lisa Guy decided to cut off financial support to their 28-year-old son, they expected pushback — not murder. Joel Junior's response was a meticulously planned double homicide, complete with a handwritten \"book of premeditation\" detailing every horrific step.",
-    duration: '12:53',
-    date: 'February 2026',
-    audioSrc: '/podcast/ep006-the-thanksgiving-murders.mp3',
-  },
-  {
     number: 5,
     slug: 'the-security-expert',
     title: 'The Security Expert',
