@@ -9,6 +9,16 @@ export const metadata: Metadata = {
 
 const episodes = [
   {
+    number: 7,
+    slug: 'the-spacex-lie',
+    title: 'The SpaceX Lie',
+    subtitle: 'The Chandler Halderson Case',
+    excerpt: "A 23-year-old claimed he was about to work for SpaceX, but when his parents discovered the truth about his web of lies, he chose murder over embarrassment. The subsequent cover-up involving dismemberment shocked a Wisconsin community.",
+    duration: '13:24',
+    date: 'February 2026',
+    audioSrc: '/podcast/ep007-the-spacex-lie.mp3',
+  },
+  {
     number: 5,
     slug: 'the-security-expert',
     title: 'The Security Expert',
