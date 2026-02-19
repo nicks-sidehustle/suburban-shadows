@@ -139,11 +139,63 @@ export default function Episodes() {
         </div>
 
         {/* Coming Soon */}
-        <div className="mt-12 text-center">
-          <p className="text-gray-500">More episodes coming soon.</p>
-          <p className="text-gray-600 text-sm mt-2">
-            Subscribe to get notified when new episodes drop.
-          </p>
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <p className="text-[#c9a227] text-sm uppercase tracking-[0.2em] mb-3">Coming Soon</p>
+            <h2 className="font-serif text-2xl md:text-3xl font-bold text-white mb-2">Up Next</h2>
+            <p className="text-gray-400">Stories we're investigating</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            {/* Joel Guy Jr. - Suggested by Keri */}
+            <div className="bg-[#0a0a0a] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden hover:border-[#333] transition">
+              <div className="absolute top-4 right-4">
+                <span className="bg-[#c9a227] text-black text-xs font-bold px-2 py-1 rounded">COMING SOON</span>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] rounded-lg flex items-center justify-center border border-[#222]">
+                  <span className="text-[#c9a227] font-serif text-lg font-bold">06</span>
+                </div>
+                <div className="flex-1">
+                  <p className="text-[#c9a227] text-xs uppercase tracking-wider mb-1">Episode 6 • From Our Listeners</p>
+                  <h3 className="font-serif text-lg font-bold text-white mb-2">The Thanksgiving Massacre</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    A Thanksgiving family gathering turns deadly when a son's financial desperation 
+                    leads to an unthinkable crime.
+                  </p>
+                  <p className="text-gray-600 text-xs mt-3">📍 Knox County, Tennessee • November 2016</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Chandler Halderson - Suggested by Keri */}
+            <div className="bg-[#0a0a0a] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden hover:border-[#333] transition">
+              <div className="absolute top-4 right-4">
+                <span className="bg-[#c9a227] text-black text-xs font-bold px-2 py-1 rounded">COMING SOON</span>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] rounded-lg flex items-center justify-center border border-[#222]">
+                  <span className="text-[#c9a227] font-serif text-lg font-bold">07</span>
+                </div>
+                <div className="flex-1">
+                  <p className="text-[#c9a227] text-xs uppercase tracking-wider mb-1">Episode 7 • From Our Listeners</p>
+                  <h3 className="font-serif text-lg font-bold text-white mb-2">The SpaceX Lie</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    When a young man's elaborate lies about a dream job at SpaceX begin to unravel, 
+                    he takes desperate measures to keep his secret.
+                  </p>
+                  <p className="text-gray-600 text-xs mt-3">📍 Windsor, Wisconsin • July 2021</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <p className="text-gray-500">More episodes in development.</p>
+            <p className="text-gray-600 text-sm mt-2">
+              Subscribe to get notified when new episodes drop.
+            </p>
+          </div>
         </div>
       </section>
 

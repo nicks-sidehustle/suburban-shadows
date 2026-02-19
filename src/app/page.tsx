@@ -155,7 +155,7 @@ export default function Home() {
               {/* Stats */}
               <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6">
                 <div className="text-center">
-                  <div className="text-4xl font-serif font-bold text-[#c9a227]">4</div>
+                  <div className="text-4xl font-serif font-bold text-[#c9a227]">5</div>
                   <div className="text-sm text-gray-500 mt-1">Episodes Available</div>
                 </div>
               </div>
@@ -194,12 +194,42 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-6">
-            {/* Episode 5 Teaser */}
+            {/* Joel Guy Jr. - Suggested by Keri */}
             <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden group hover:border-[#333] transition">
               <div className="absolute top-4 right-4">
                 <span className="bg-[#c9a227] text-black text-xs font-bold px-2 py-1 rounded">COMING SOON</span>
               </div>
-              <p className="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Episode 5</p>
+              <p className="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Episode 6 • From Our Listeners</p>
+              <h3 className="font-serif text-xl font-bold text-white mb-3">The Thanksgiving Massacre</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                A Thanksgiving family gathering turns deadly when a son's financial desperation 
+                leads to an unthinkable crime. Joel Guy Jr. had one weekend to solve his money problems — 
+                <span className="text-white"> and he chose the most horrific solution.</span>
+              </p>
+              <p className="text-gray-600 text-xs mt-4">📍 Knox County, Tennessee • November 2016</p>
+            </div>
+
+            {/* Chandler Halderson - Suggested by Keri */}
+            <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden group hover:border-[#333] transition">
+              <div className="absolute top-4 right-4">
+                <span className="bg-[#c9a227] text-black text-xs font-bold px-2 py-1 rounded">COMING SOON</span>
+              </div>
+              <p className="text-[#c9a227] text-sm uppercase tracking-wider mb-2">Episode 7 • From Our Listeners</p>
+              <h3 className="font-serif text-xl font-bold text-white mb-3">The SpaceX Lie</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                When a young man's elaborate lies about a dream job at SpaceX begin to unravel, 
+                he takes desperate measures to keep his secret. Chandler Halderson's web of deception 
+                <span className="text-white"> ended in the ultimate betrayal.</span>
+              </p>
+              <p className="text-gray-600 text-xs mt-4">📍 Windsor, Wisconsin • July 2021</p>
+            </div>
+
+            {/* Future Episode Teaser */}
+            <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden group hover:border-[#333] transition">
+              <div className="absolute top-4 right-4">
+                <span className="bg-[#333] text-gray-400 text-xs font-bold px-2 py-1 rounded">RESEARCHING</span>
+              </div>
+              <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">Episode 8</p>
               <h3 className="font-serif text-xl font-bold text-white mb-3">The Vampire Killer of Sacramento</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Richard Chase terrorized Sacramento's East Area in 1977-78, earning his nickname 
@@ -207,36 +237,6 @@ export default function Home() {
                 <span className="text-white"> The suburbs were never the same.</span>
               </p>
               <p className="text-gray-600 text-xs mt-4">📍 Sacramento, California • 1977-1978</p>
-            </div>
-
-            {/* Future Episode Teaser */}
-            <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden group hover:border-[#333] transition">
-              <div className="absolute top-4 right-4">
-                <span className="bg-[#333] text-gray-400 text-xs font-bold px-2 py-1 rounded">RESEARCHING</span>
-              </div>
-              <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">Episode 6</p>
-              <h3 className="font-serif text-xl font-bold text-white mb-3">The Girl in the Box</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Colleen Stan was hitchhiking to a friend's birthday party when Cameron Hooker 
-                offered her a ride. She wouldn't escape for seven years. 
-                <span className="text-white"> A Red Bluff nightmare.</span>
-              </p>
-              <p className="text-gray-600 text-xs mt-4">📍 Red Bluff, California • 1977-1984</p>
-            </div>
-
-            {/* Future Episode Teaser */}
-            <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6 relative overflow-hidden group hover:border-[#333] transition">
-              <div className="absolute top-4 right-4">
-                <span className="bg-[#333] text-gray-400 text-xs font-bold px-2 py-1 rounded">RESEARCHING</span>
-              </div>
-              <p className="text-gray-500 text-sm uppercase tracking-wider mb-2">Episode 7</p>
-              <h3 className="font-serif text-xl font-bold text-white mb-3">The Cheerleader Murder</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Kirsten Costas was stabbed to death in a quiet suburban driveway after a 
-                Bob-o-Links dinner. Her killer was a classmate desperate to fit in.
-                <span className="text-white"> A Miramonte High tragedy.</span>
-              </p>
-              <p className="text-gray-600 text-xs mt-4">📍 Orinda, California • 1984</p>
             </div>
 
             {/* Subscribe CTA */}
