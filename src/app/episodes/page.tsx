@@ -19,6 +19,16 @@ const episodes = [
     audioSrc: '/podcast/ep007-the-spacex-lie.mp3',
   },
   {
+    number: 6,
+    slug: 'the-thanksgiving-murders',
+    title: 'The Thanksgiving Murders',
+    subtitle: 'The Joel Guy Jr. Case',
+    excerpt: "When Joel and Lisa Guy decided to cut off financial support to their 28-year-old son, they expected pushback — not murder. Joel Junior's response was a meticulously planned double homicide, complete with a handwritten \"book of premeditation\" detailing every horrific step.",
+    duration: '12:53',
+    date: 'February 2026',
+    audioSrc: '/podcast/ep006-the-thanksgiving-murders.mp3',
+  },
+  {
     number: 5,
     slug: 'the-security-expert',
     title: 'The Security Expert',
