@@ -1,51 +1,10 @@
 import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { SubscribeForm } from '@/components/SubscribeForm'
-
-const episodes = [
-  {
-    number: 4,
-    slug: 'applegate-jane-doe',
-    title: 'The Applegate Jane Doe',
-    subtitle: 'The Patricia Rose Cold Case',
-    excerpt: "In 1980, an 18-month-old boy was found alone in a Sacramento hotel room. His mother had vanished. For 44 years, her remains lay unidentified in a Placer County case file. DNA finally gave her a name — but who killed Patricia Rose?",
-    duration: '13:20',
-    date: 'February 2026',
-    featured: true
-  },
-  {
-    number: 3,
-    slug: 'love-slave-killers',
-    title: 'The Love Slave Killers',
-    subtitle: 'The Gallego Case',
-    excerpt: "A violin prodigy and a convicted criminal terrorized Sacramento for two years, luring ten victims from shopping malls. Their final abduction at Arden Fair Mall — witnessed by a fraternity brother who memorized the license plate — brought them down.",
-    duration: '15:08',
-    date: 'February 2026',
-    featured: false
-  },
-  {
-    number: 2,
-    slug: 'family-next-door',
-    title: 'The Family Next Door',
-    subtitle: 'The Chris Watts Case',
-    excerpt: "A fitness-obsessed father. A pregnant wife documenting her perfect life on social media. Two little girls with gap-toothed smiles. On August 13, 2018, Chris Watts murdered them all — then went on TV pleading for their safe return.",
-    duration: '10:05',
-    date: 'February 2026',
-    featured: false
-  },
-  {
-    number: 1,
-    slug: 'ballroom-bodies',
-    title: 'The Ballroom Bodies',
-    subtitle: 'The John List Case',
-    excerpt: "A Sunday school teacher. A Boy Scout leader. A father who methodically murdered his entire family, then vanished for 18 years. The house sat lit for a month, hymns playing on repeat, while five bodies decomposed in the ballroom.",
-    duration: '11:01',
-    date: 'August 2025',
-    featured: false
-  }
-]
+import { getAllEpisodes } from '@/lib/episodes'
 
 export default function Home() {
+  const episodes = getAllEpisodes()
   const latestEpisode = episodes[0]
   
   return (
@@ -106,7 +65,7 @@ export default function Home() {
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80">
                     <div className="flex items-center gap-3 text-sm text-gray-400">
-                      <span>Episode {latestEpisode.number}</span>
+                      <span>Episode {latestEpisode.episodeNumber}</span>
                       <span>•</span>
                       <span>{latestEpisode.duration}</span>
                     </div>
@@ -155,7 +114,7 @@ export default function Home() {
               {/* Stats */}
               <div className="bg-[#111111] border border-[#1a1a1a] rounded-lg p-6">
                 <div className="text-center">
-                  <div className="text-4xl font-serif font-bold text-[#c9a227]">5</div>
+                  <div className="text-4xl font-serif font-bold text-[#c9a227]">{episodes.length}</div>
                   <div className="text-sm text-gray-500 mt-1">Episodes Available</div>
                 </div>
               </div>
