@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: 'Suburban Shadows — True Crime Podcast',
   description: 'Dark mysteries hidden behind manicured lawns and white picket fences. A true crime podcast exploring the secrets buried in suburban America.',
   keywords: ['true crime', 'podcast', 'suburban mysteries', 'cold cases', 'murder', 'investigation'],
+  verification: {
+    google: 'ITaKPnsxnWJV5K6a7SC4pdqyJyS6vwzRdFnam0g751U',
+  },
   openGraph: {
     title: 'Suburban Shadows',
     description: 'Dark mysteries hidden behind manicured lawns.',
