@@ -21,9 +21,11 @@ export function Header({ currentPage }: HeaderProps) {
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="group">
-            <h1 className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight">
-              Suburban<span className="text-[#c9a227]">Shadows</span>
-            </h1>
+            <img 
+              src="/logo.png" 
+              alt="Suburban Shadows" 
+              className="h-14 sm:h-16 md:h-20 w-auto"
+            />
           </Link>
           
           {/* Desktop nav */}
